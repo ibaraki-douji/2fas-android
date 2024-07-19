@@ -40,7 +40,7 @@ class Strings(c: Context) {
 
     val startupTermsLabel = c.getString(R.string.introduction__tos)
     val startupStepOneHeader = c.getString(R.string.introduction__page_1_title)
-    val startupStepOneBody = c.getString(R.string.introduction__page_1_content)
+    val startupStepOneBody = c.getString(R.string.introduction__page_1_content) + "\nWarning: This is not the original project but a fork of it."
     val startupStepTwoHeader = c.getString(R.string.introduction__page_2_title)
     val startupStepTwoBody = c.getString(R.string.introduction__page_2_content)
     val startupStepThreeHeader = c.getString(R.string.introduction__page_3_title)
