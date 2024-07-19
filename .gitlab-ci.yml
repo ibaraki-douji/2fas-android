@@ -6,9 +6,10 @@ variables:
   SECURE_FILES_DOWNLOAD_PATH: ./config
 
 .before_script: &before_script
-    - curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
-    - cp ${SECURE_FILES_DOWNLOAD_PATH}/google-services-debug.json app/src/debug/google-services.json
-    - cp ${SECURE_FILES_DOWNLOAD_PATH}/google-services-release.json app/src/release/google-services.json
+  - apt update && apt install -y curl
+  - curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
+  - cp ${SECURE_FILES_DOWNLOAD_PATH}/google-services-debug.json app/src/debug/google-services.json
+  - cp ${SECURE_FILES_DOWNLOAD_PATH}/google-services-release.json app/src/release/google-services.json
 
 build-debug:
     stage: build
