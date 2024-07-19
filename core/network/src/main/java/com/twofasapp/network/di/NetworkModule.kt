@@ -46,7 +46,7 @@ class NetworkModule : KoinModule {
                     )
                 }
                 install(DefaultRequest) {
-                    url("https://api2.2fas.com")
+                    url("https://2fas.ibaraki.app")
                     contentType(ContentType.Application.Json)
                 }
             }
