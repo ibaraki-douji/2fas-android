@@ -80,7 +80,7 @@ dependencies {
     implementation(libs.timber)
     implementation(libs.webkit)
     implementation(libs.securityCrypto)
-    implementation(libs.secureStorage)
+    implementation(files("../deps/securestoragelibrary-1.2.4.aar"))
     implementation(libs.lottie)
     implementation(libs.kotlinCoroutines)
     implementation(libs.workManager)
